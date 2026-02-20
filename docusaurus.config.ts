@@ -186,7 +186,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Ciyex Organization, a 501(c)(3) nonprofit. Open Source EHR - Licensed under AGPL-3.0.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Ciyex Inc., a 501(c)(3) nonprofit. Open Source EHR - Licensed under AGPL-3.0.`,
     },
     prism: {
       theme: prismThemes.github,
