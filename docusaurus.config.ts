@@ -107,6 +107,7 @@ const config: Config = {
         },
         { to: '/docs/api', label: 'API', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
+        { to: '/about', label: 'About', position: 'left' },
         {
           type: 'dropdown',
           label: 'Community',
@@ -172,6 +173,7 @@ const config: Config = {
         {
           title: 'More',
           items: [
+            { label: 'About Us', to: '/about' },
             { label: 'Blog', to: '/blog' },
             { label: 'GitHub', href: 'https://github.com/ciyex-org/ciyex' },
             { label: 'Release Notes', to: '/docs/releases' },
