@@ -1,76 +1,93 @@
 /**
- * Ciyex EHR - Open Source Electronic Health Records
- * Webex.com exact style copy
+ * Ciyex EHR - Premium Healthcare SaaS Theme
+ * Clean, modern design inspired by Linear/Vercel/Stripe
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
-/* Webex exact colors - Light Mode */
+/* ── Light Mode ── */
 :root {
-  --ifm-color-primary: #2E64F3;
-  /* Webex Dark Blue */
-  --ifm-color-primary-dark: #1b50d8;
-  --ifm-color-primary-darker: #1646bf;
-  --ifm-color-primary-darkest: #0e2e8a;
-  --ifm-color-primary-light: #5280f6;
-  --ifm-color-primary-lighter: #688ef7;
-  --ifm-color-primary-lightest: #9abbfa;
+  --ifm-color-primary: #0d9488;
+  --ifm-color-primary-dark: #0b7f74;
+  --ifm-color-primary-darker: #0a786e;
+  --ifm-color-primary-darkest: #08635b;
+  --ifm-color-primary-light: #0faa9c;
+  --ifm-color-primary-lighter: #10b1a2;
+  --ifm-color-primary-lightest: #14d4c3;
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --ifm-heading-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --ifm-font-weight-bold: 600;
   --ifm-font-size-base: 16px;
   --ifm-line-height-base: 1.6;
-  --docusaurus-highlighted-code-line-bg: rgba(46, 100, 243, 0.1);
-  --ifm-navbar-background-color: #000000;
-  --ifm-navbar-link-color: #ffffff;
+  --docusaurus-highlighted-code-line-bg: rgba(13, 148, 136, 0.1);
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.8);
+  --ifm-navbar-link-color: #334155;
   --ifm-navbar-shadow: none;
-  --ifm-footer-background-color: #000000;
-  --ifm-heading-color: #000000;
+  --ifm-footer-background-color: #0f172a;
+  --ifm-heading-color: #0f172a;
   --ifm-background-color: #ffffff;
-  --webex-gradient-start: #A162F7;
-  /* Webex-like Purple */
-  --webex-gradient-end: #1CC6FF;
-  /* Webex Light Blue */
-  --webex-green: #51E178;
+  --cx-accent: #06b6d4;
+  --cx-accent-soft: rgba(6, 182, 212, 0.08);
+  --cx-emerald: #10b981;
+  --cx-slate-50: #f8fafc;
+  --cx-slate-100: #f1f5f9;
+  --cx-slate-200: #e2e8f0;
+  --cx-slate-500: #64748b;
+  --cx-slate-700: #334155;
+  --cx-slate-900: #0f172a;
+  --cx-card-bg: #ffffff;
+  --cx-card-border: rgba(0, 0, 0, 0.06);
+  --cx-glow: rgba(6, 182, 212, 0.15);
 }
 
-/* Webex exact colors - Dark Mode */
+/* ── Dark Mode ── */
 [data-theme='dark'] {
-  --ifm-color-primary: #1CC6FF;
-  /* Webex Light Blue for dark mode */
-  --ifm-color-primary-dark: #00b3eb;
-  --ifm-color-primary-darker: #00a9de;
-  --ifm-color-primary-darkest: #008bb3;
-  --ifm-color-primary-light: #4cd4ff;
-  --ifm-color-primary-lighter: #66dbff;
-  --ifm-color-primary-lightest: #99e8ff;
-  --docusaurus-highlighted-code-line-bg: rgba(28, 198, 255, 0.15);
-  --ifm-navbar-background-color: #000000;
-  --ifm-footer-background-color: #000000;
-  --ifm-background-color: #121212;
-  --ifm-background-surface-color: #1a1a1a;
-  --ifm-heading-color: #ffffff;
+  --ifm-color-primary: #2dd4bf;
+  --ifm-color-primary-dark: #1abfab;
+  --ifm-color-primary-darker: #18b4a1;
+  --ifm-color-primary-darkest: #149485;
+  --ifm-color-primary-light: #50dece;
+  --ifm-color-primary-lighter: #5ce1d2;
+  --ifm-color-primary-lightest: #86eadf;
+  --docusaurus-highlighted-code-line-bg: rgba(45, 212, 191, 0.15);
+  --ifm-navbar-background-color: rgba(15, 23, 42, 0.85);
+  --ifm-footer-background-color: #020617;
+  --ifm-background-color: #0f172a;
+  --ifm-background-surface-color: #1e293b;
+  --ifm-heading-color: #f1f5f9;
+  --cx-card-bg: #1e293b;
+  --cx-card-border: rgba(255, 255, 255, 0.06);
+  --cx-glow: rgba(45, 212, 191, 0.1);
+  --cx-slate-50: #1e293b;
+  --cx-slate-100: #1e293b;
+  --cx-slate-500: #94a3b8;
+  --cx-slate-700: #cbd5e1;
+  --cx-slate-900: #f1f5f9;
 }
 
-/* Navbar - Webex White navbar */
+/* ── Navbar ── */
 .navbar {
-  background-color: #ffffff !important;
+  background: var(--ifm-navbar-background-color) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   height: 64px;
   padding: 0 24px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--cx-card-border);
+  box-shadow: none;
 }
 
 .navbar__title {
   font-weight: 700;
-  font-size: 1.25rem;
-  color: #1a1a1a !important;
+  font-size: 1.2rem;
+  color: var(--cx-slate-900) !important;
 }
 
 .navbar__link {
-  color: #1a1a1a !important;
+  color: var(--cx-slate-700) !important;
   font-weight: 500;
   font-size: 0.9375rem;
+  transition: color 0.15s ease;
 }
 
 .navbar__link:hover {
@@ -81,18 +98,16 @@
   height: 32px;
 }
 
-/* Hero Section - Global background is white, but card processes are handled in module */
+/* ── Hero Section ── */
 .hero {
   background: transparent;
-  /* Handled by module */
-  padding: 80px 0 100px;
+  padding: 0;
   position: relative;
   overflow: visible;
 }
 
 .hero::before {
   display: none;
-  /* Moved to module */
 }
 
 .hero--primary {
@@ -101,127 +116,132 @@
 }
 
 .hero__title {
-  font-size: 3.5rem;
-  font-weight: 800;
-  line-height: 1.1;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.05;
   margin-bottom: 1.5rem;
-  background: linear-gradient(90deg, #ffffff 0%, #e0e0e0 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
 }
 
 .hero__subtitle {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.8);
   max-width: 600px;
   margin: 0 auto 2rem;
+  line-height: 1.6;
 }
 
-/* Buttons - Webex pill style */
+/* ── Buttons ── */
 .button {
-  border-radius: 100px;
+  border-radius: 10px;
   font-weight: 600;
-  font-size: 1rem;
-  padding: 12px 32px;
+  font-size: 0.9375rem;
+  padding: 12px 28px;
   transition: all 0.2s ease;
+  letter-spacing: -0.01em;
 }
 
 .button--primary {
-  background: var(--webex-green) !important;
+  background: var(--cx-emerald) !important;
   border: none;
-  color: #000000 !important;
-  /* Green usually goes with dark text, or check contrast. Webex green often has black text or white. Let's check contrast. Webex green #51E178 is light. Black text is better. */
+  color: #ffffff !important;
 }
 
 .button--secondary {
-  background: linear-gradient(90deg, var(--webex-gradient-start) 0%, var(--webex-gradient-end) 100%);
+  background: var(--ifm-color-primary) !important;
   border: none;
   color: #ffffff !important;
 }
 
 .button--primary:hover {
-  background: #3bc662 !important;
-  /* Slightly darker green for hover */
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(81, 225, 120, 0.4);
+  background: #059669 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
 }
 
 .button--secondary:hover {
-  background: linear-gradient(90deg, #8a4bd6 0%, #00a9d4 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(161, 98, 247, 0.3);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(13, 148, 136, 0.3);
 }
 
-/* Navbar Sign Up Button - Black */
+/* ── Navbar Sign Up Button ── */
 .navbar-signup-btn {
-  background: #000000 !important;
-  /* Explicit black */
+  background: var(--cx-slate-900) !important;
   color: #ffffff !important;
-  border-radius: 100px;
-  padding: 8px 24px !important;
+  border-radius: 10px;
+  padding: 8px 20px !important;
   font-size: 0.875rem !important;
   font-weight: 600;
   transition: all 0.2s ease;
-  margin-left: 16px;
+  margin-left: 12px;
   display: flex !important;
   align-items: center;
   height: fit-content;
   align-self: center;
   line-height: 1.2;
+  border: 1px solid transparent;
+}
+
+[data-theme='dark'] .navbar-signup-btn {
+  background: #ffffff !important;
+  color: var(--cx-slate-900) !important;
 }
 
 .navbar-signup-btn:hover {
-  background: #333333 !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  opacity: 0.85;
   transform: translateY(-1px);
   text-decoration: none !important;
 }
 
 .button--outline {
   background: transparent;
-  border: 2px solid #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
   color: #ffffff !important;
+  backdrop-filter: blur(4px);
 }
 
 .button--outline:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
-/* Features Section */
+/* ── Features Section ── */
 .features {
-  background: #ffffff;
+  background: var(--cx-slate-50);
   padding: 80px 0;
 }
 
 [data-theme='dark'] .features {
-  background: #121212;
+  background: var(--ifm-background-color);
 }
 
-/* Cards - Webex style */
+/* ── Cards ── */
 .card {
-  background: #ffffff;
+  background: var(--cx-card-bg);
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 6px 24px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+  border: 1px solid var(--cx-card-border);
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 16px 48px rgba(0, 0, 0, 0.08);
 }
 
 [data-theme='dark'] .card {
-  background: #1a1a1a;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 6px 24px rgba(0, 0, 0, 0.15);
 }
 
-/* Footer - Webex.com exact color scheme with gradient */
+/* ── Footer ── */
 .footer {
-  background: linear-gradient(180deg, #000000 0%, #1a1a1a 100%) !important;
+  background: var(--ifm-footer-background-color) !important;
   padding: 60px 0 40px;
   position: relative;
 }
@@ -233,22 +253,22 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .footer__title {
-  color: #ffffff;
+  color: #f1f5f9;
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.08em;
   margin-bottom: 1rem;
 }
 
 .footer__link-item {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(148, 163, 184, 0.9);
   font-size: 0.875rem;
-  transition: color 0.2s ease;
+  transition: color 0.15s ease;
 }
 
 .footer__link-item:hover {
@@ -257,53 +277,54 @@
 }
 
 .footer__copyright {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(148, 163, 184, 0.5);
   font-size: 0.8125rem;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-/* Sidebar */
+/* ── Sidebar ── */
 .menu__link {
   border-radius: 8px;
   font-weight: 500;
-  transition: all 0.2s ease;
+  transition: all 0.15s ease;
 }
 
 .menu__link--active {
-  background: linear-gradient(90deg, rgba(161, 98, 247, 0.1) 0%, rgba(28, 198, 255, 0.1) 100%);
+  background: var(--cx-accent-soft);
 }
 
-/* Code Blocks */
+/* ── Code Blocks ── */
 .prism-code {
   border-radius: 12px;
 }
 
-/* Announcement Bar - Webex gradient */
+/* ── Announcement Bar ── */
 div[class*="announcementBar"] {
-  background: linear-gradient(90deg, var(--webex-gradient-start) 0%, var(--webex-gradient-end) 100%) !important;
+  background: linear-gradient(90deg, #0f172a 0%, #1e293b 100%) !important;
   font-weight: 500;
+  font-size: 0.875rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-/* Typography */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+[data-theme='dark'] div[class*="announcementBar"] {
+  background: linear-gradient(90deg, #020617 0%, #0f172a 100%) !important;
+}
+
+/* ── Typography ── */
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
-/* Responsive */
+/* ── Responsive ── */
 @media (max-width: 996px) {
   .hero__title {
     font-size: 2.5rem;
   }
 
   .hero__subtitle {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
 }

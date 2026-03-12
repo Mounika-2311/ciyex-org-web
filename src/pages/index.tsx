@@ -26,7 +26,8 @@ function HomepageHeader() {
             </Heading>
             <p className="hero__subtitle">{siteConfig.tagline}</p>
             <p className={styles.heroDescription}>
-              A 501(c)(3) nonprofit empowering Public Health initiatives globally. A complete, modern Electronic Health Records system built for <strong>patients</strong>, clinics,
+              A 501(c)(3) nonprofit empowering Public Health initiatives globally.
+              A complete, modern Electronic Health Records system built for <strong>patients</strong>, clinics,
               hospitals, and healthcare organizations. HIPAA-compliant, interoperable,
               and designed for the future of healthcare.
             </p>
@@ -41,6 +42,24 @@ function HomepageHeader() {
                 to="https://github.com/ciyex-org/ciyex">
                 View on GitHub
               </Link>
+            </div>
+            <div className={styles.statsBar}>
+              <div className={styles.statItem}>
+                <span className={styles.statValue}>FHIR R4</span>
+                <span className={styles.statLabel}>Compliant</span>
+              </div>
+              <div className={styles.statItem}>
+                <span className={styles.statValue}>HIPAA</span>
+                <span className={styles.statLabel}>Certified</span>
+              </div>
+              <div className={styles.statItem}>
+                <span className={styles.statValue}>AGPL-3.0</span>
+                <span className={styles.statLabel}>Licensed</span>
+              </div>
+              <div className={styles.statItem}>
+                <span className={styles.statValue}>100%</span>
+                <span className={styles.statLabel}>Open Source</span>
+              </div>
             </div>
           </div>
         </div>
