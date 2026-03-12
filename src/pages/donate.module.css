@@ -85,13 +85,15 @@
   margin-bottom: 24px;
   border-radius: 12px;
   overflow: hidden;
+  background: #ffffff;
+  padding: 8px 12px;
 }
 
 .formEmbed {
   background: #ffffff;
   border-radius: 16px;
   overflow: hidden;
-  height: 820px;
+  height: 1100px;
   box-shadow: 0 0 60px rgba(6, 182, 212, 0.08), 0 0 120px rgba(16, 185, 129, 0.04);
 }
 
