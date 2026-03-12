@@ -51,12 +51,12 @@ export default function About(): ReactNode {
                   providing a complete, HIPAA-compliant EHR platform that is free to use,
                   self-hostable, and built on open standards like FHIR R4 and HL7 v2. We
                   serve patients, clinics, hospitals, and healthcare organizations of all
-                  sizes — from rural community health centers to large hospital networks.
+                  sizes, from rural community health centers to large hospital networks.
                 </p>
                 <p className={styles.missionText}>
                   By making healthcare technology open source, we aim to reduce barriers
                   to adoption, promote data interoperability, and enable healthcare
-                  providers to focus on what matters most — patient care.
+                  providers to focus on what matters most: patient care.
                 </p>
               </div>
             </div>

@@ -6,7 +6,7 @@ export default function DonatePage() {
   return (
     <Layout
       title="Donate"
-      description="Support Ciyex EHR — a 501(c)(3) nonprofit building open source healthcare technology. Every dollar is tax-deductible.">
+      description="Support Ciyex EHR, a 501(c)(3) nonprofit building open source healthcare technology. Every dollar is tax-deductible.">
       <section className={styles.hero}>
         <div className={styles.heroInner}>
           <div className={styles.badge}>501(c)(3) Nonprofit &middot; EIN 41-3609665</div>

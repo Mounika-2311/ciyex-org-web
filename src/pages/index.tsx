@@ -131,7 +131,7 @@ function HomepageHero() {
         </Heading>
         <p className={styles.heroSubtitle}>
           30 million Americans lack access to basic health records technology.
-          We're building the open source EHR to change that &mdash; free forever.
+          We're building the open source EHR to change that. Free forever.
         </p>
         <div className={styles.heroCta}>
           <Link className={styles.btnPrimary} to="/about">
@@ -149,12 +149,12 @@ function HomepageHero() {
 
 /* ── Features ── */
 const features = [
-  { icon: <IconHeart />, title: 'Patient-First Design', desc: 'Patients own their health data. Secure portal access to records, appointments, messaging, and prescriptions — putting people in control of their care.' },
+  { icon: <IconHeart />, title: 'Patient-First Design', desc: 'Patients own their health data. Secure portal access to records, appointments, messaging, and prescriptions. People in control of their care.' },
   { icon: <IconUsers />, title: 'Community Health', desc: 'Purpose-built for community health centers, free clinics, and rural providers who serve the most underserved populations.' },
   { icon: <IconGlobe />, title: 'Health Equity', desc: 'Multi-language, culturally responsive, and designed to remove barriers to care for immigrant, uninsured, and underserved communities.' },
-  { icon: <IconShield />, title: 'Privacy &amp; Trust', desc: 'HIPAA-compliant with enterprise-grade encryption. Every patient deserves the same level of data protection, regardless of where they receive care.' },
+  { icon: <IconShield />, title: 'Privacy & Trust', desc: 'HIPAA-compliant with enterprise-grade encryption. Every patient deserves the same level of data protection, regardless of where they receive care.' },
   { icon: <IconCode />, title: 'Open Source', desc: 'AGPL-3.0 licensed. No vendor lock-in, no per-patient fees. Communities can self-host and own their healthcare infrastructure.' },
-  { icon: <IconZap />, title: 'Interoperable', desc: 'FHIR R4 native — connects with labs, pharmacies, and other systems so patients never have to repeat their story at every visit.' },
+  { icon: <IconZap />, title: 'Interoperable', desc: 'FHIR R4 native. Connects with labs, pharmacies, and other systems so patients never have to repeat their story at every visit.' },
 ];
 
 function FeaturesSection() {
@@ -196,7 +196,7 @@ function ShowcaseSection() {
             </Heading>
             <p className={styles.showcaseDesc}>
               Complete health records, smart clinical tools, and coordinated care
-              &mdash; the same quality of technology whether you're at a rural clinic
+              . The same quality of technology whether you're at a rural clinic
               or a major hospital.
             </p>
             <Link className={styles.showcaseLink} to="/docs/features/clinical-docs">
@@ -234,7 +234,7 @@ function ShowcaseSection() {
             </Heading>
             <p className={styles.showcaseDesc}>
               Built on FHIR R4 open standards so patient records move seamlessly
-              between providers, labs, pharmacies, and specialists &mdash; no more
+              between providers, labs, pharmacies, and specialists. No more
               lost records or repeated tests.
             </p>
             <Link className={styles.showcaseLink} to="/docs/architecture/fhir-integration">
@@ -298,7 +298,7 @@ function CtaSection() {
           Join the movement for<br />open healthcare.
         </Heading>
         <p className={styles.ctaDesc}>
-          Whether you run a community health center, volunteer at a free clinic, or believe healthcare is a right &mdash; there's a place for you.
+          Whether you run a community health center, volunteer at a free clinic, or believe healthcare is a right, there's a place for you.
         </p>
         <div className={styles.ctaButtons}>
           <Link className={styles.btnPrimary} to="/donate">
@@ -318,7 +318,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="Open Source EHR for Every Community"
-      description="Ciyex is a 501(c)(3) nonprofit building free, open source health records technology so every community — no matter how underserved — has access to modern healthcare tools.">
+      description="Ciyex is a 501(c)(3) nonprofit building free, open source health records technology so every community, no matter how underserved, has access to modern healthcare tools.">
       <HomepageHero />
       <FeaturesSection />
       <ShowcaseSection />
