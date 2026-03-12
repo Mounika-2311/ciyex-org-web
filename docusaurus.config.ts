@@ -218,7 +218,7 @@ const config: Config = {
           ],
         },
         {
-          href: '#',
+          to: '/donate',
           label: 'Donate',
           position: 'right',
           className: 'navbar-donate-btn',
@@ -258,7 +258,7 @@ const config: Config = {
             { label: 'About Us', to: '/about' },
             { label: 'Blog', to: '/blog' },
             { label: 'GitHub', href: 'https://github.com/ciyex-org/ciyex' },
-            { label: 'Donate', href: 'https://www.zeffy.com/embed/donation-form/ciyex-ehr?modal=true' },
+            { label: 'Donate', to: '/donate' },
             { label: 'Contributing', to: '/docs/development/contributing' },
           ],
         },

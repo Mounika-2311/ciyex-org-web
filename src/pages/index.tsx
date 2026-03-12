@@ -287,13 +287,9 @@ function DonateSection() {
           </div>
         </div>
         <div className={styles.donateButtons}>
-          <a
-            className={styles.btnDonate}
-            href="#"
-            {...{'zeffy-form-link': 'https://www.zeffy.com/embed/donation-form/ciyex-ehr?modal=true'} as any}
-          >
+          <Link className={styles.btnDonate} to="/donate">
             Donate Now
-          </a>
+          </Link>
           <Link className={styles.btnGhost} to="/about">
             Learn about our mission &rarr;
           </Link>
