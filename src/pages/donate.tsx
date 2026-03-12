@@ -1,6 +1,57 @@
+import { useState, useEffect, useRef } from 'react';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './donate.module.css';
+
+function DonateForm() {
+  const [height, setHeight] = useState(820);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+
+  useEffect(() => {
+    const handleMessage = (e: MessageEvent) => {
+      // Zeffy sends postMessage with height info
+      if (e.origin?.includes('zeffy.com') && e.data) {
+        try {
+          const data = typeof e.data === 'string' ? JSON.parse(e.data) : e.data;
+          if (data.height && typeof data.height === 'number') {
+            setHeight(Math.max(820, data.height + 40));
+          }
+        } catch {
+          // not JSON, ignore
+        }
+      }
+    };
+
+    // Also poll iframe navigation as fallback
+    let clicks = 0;
+    const handleClick = () => {
+      // After any click, wait a moment and bump height if still at initial
+      clicks++;
+      if (clicks >= 1 && height <= 820) {
+        setTimeout(() => setHeight(1400), 500);
+      }
+    };
+
+    window.addEventListener('message', handleMessage);
+    window.addEventListener('click', handleClick);
+    return () => {
+      window.removeEventListener('message', handleMessage);
+      window.removeEventListener('click', handleClick);
+    };
+  }, [height]);
+
+  return (
+    <div className={styles.formEmbed} style={{ height }}>
+      <iframe
+        ref={iframeRef}
+        title="Donate to Ciyex EHR"
+        src="https://www.zeffy.com/embed/donation-form/ciyex-ehr"
+        allowTransparency={true}
+        style={{ border: 0, width: '100%', height: '100%' }}
+      />
+    </div>
+  );
+}
 
 export default function DonatePage() {
   return (
@@ -23,14 +74,7 @@ export default function DonatePage() {
 
       <section className={styles.formSection}>
         <div className={styles.formContainer}>
-          <div className={styles.formEmbed}>
-            <iframe
-              title="Donate to Ciyex EHR"
-              src="https://www.zeffy.com/embed/donation-form/ciyex-ehr"
-              allowTransparency={true}
-              style={{ border: 0, width: '100%', height: '100%' }}
-            />
-          </div>
+          <DonateForm />
         </div>
       </section>
 
@@ -53,7 +97,7 @@ export default function DonatePage() {
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" />
                 </svg>
               </div>
-              <h3>Security &amp; Compliance</h3>
+              <h3>Security & Compliance</h3>
               <p>HIPAA compliance, security audits, and SOC 2 certification.</p>
             </div>
             <div className={styles.impactCard}>
