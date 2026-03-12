@@ -1,35 +1,11 @@
-import { useState, useEffect } from 'react';
 import type { ReactNode } from 'react';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './signup.module.css';
 
 function CalendlyEmbed() {
-  const [height, setHeight] = useState(700);
-
-  useEffect(() => {
-    const handleMessage = (e: MessageEvent) => {
-      // Calendly sends postMessage events for page height and navigation
-      if (!e.data?.event) return;
-      if (e.data.event === 'calendly.page_height') {
-        const h = parseFloat(e.data.payload?.height);
-        if (h && h > 100) {
-          setHeight(Math.max(700, Math.ceil(h) + 40));
-        }
-      } else if (e.data.event === 'calendly.event_type_viewed' ||
-                 e.data.event === 'calendly.date_and_time_selected' ||
-                 e.data.event === 'calendly.event_scheduled') {
-        // On step change, bump height if needed
-        setHeight(prev => Math.max(prev, 900));
-      }
-    };
-
-    window.addEventListener('message', handleMessage);
-    return () => window.removeEventListener('message', handleMessage);
-  }, []);
-
   return (
-    <div className={styles.calendlyContainer} style={{ height }}>
+    <div className={styles.calendlyContainer}>
       <iframe
         src="https://calendly.com/ciyex/ehr?hide_gdpr_banner=1"
         width="100%"
@@ -37,7 +13,6 @@ function CalendlyEmbed() {
         frameBorder="0"
         title="Schedule a meeting with Ciyex"
         className={styles.calendlyEmbed}
-        style={{ height: '100%' }}
       />
     </div>
   );
