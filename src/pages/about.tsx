@@ -82,6 +82,31 @@ export default function About(): ReactNode {
             </div>
           </section>
 
+          {/* Donate Section */}
+          <section className={styles.section}>
+            <div className={styles.sectionInner}>
+              <Heading as="h2" className={styles.sectionTitle}>
+                Support Our Mission
+              </Heading>
+              <div className={styles.donateCard}>
+                <p className={styles.missionText}>
+                  As a 501(c)(3) nonprofit, we rely on the generosity of our community
+                  to build open source healthcare technology. Every contribution is
+                  tax-deductible and goes directly to development.
+                </p>
+                <div className={styles.donateCta}>
+                  <a
+                    className={styles.donateBtn}
+                    href="#"
+                    {...{'zeffy-form-link': 'https://www.zeffy.com/embed/donation-form/ciyex-ehr?modal=true'} as any}
+                  >
+                    Donate Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Corporate Info Section */}
           <section className={styles.section}>
             <div className={styles.sectionInner}>

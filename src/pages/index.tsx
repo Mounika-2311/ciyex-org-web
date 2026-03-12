@@ -262,6 +262,45 @@ function ShowcaseSection() {
   );
 }
 
+/* ── Donate Section ── */
+function DonateSection() {
+  return (
+    <section className={styles.donate}>
+      <div className={styles.donateInner}>
+        <div className={styles.sectionLabel}>501(c)(3) Nonprofit</div>
+        <Heading as="h2" className={styles.donateTitle}>
+          Help us build healthcare<br />
+          <span className={styles.heroGradient}>for everyone.</span>
+        </Heading>
+        <p className={styles.donateDesc}>
+          Ciyex is a nonprofit. Every dollar goes directly to building open source
+          healthcare technology. Your donation is tax-deductible.
+        </p>
+        <div className={styles.donateThermometer}>
+          <iframe
+            title="Donation thermometer powered by Zeffy"
+            src="https://www.zeffy.com/embed/thermometer/ciyex-ehr"
+            allowTransparency={true}
+            style={{ border: 0, width: '100%', height: '120px' }}
+          />
+        </div>
+        <div className={styles.donateButtons}>
+          <a
+            className={styles.btnDonate}
+            href="#"
+            {...{'zeffy-form-link': 'https://www.zeffy.com/embed/donation-form/ciyex-ehr?modal=true'} as any}
+          >
+            Donate Now
+          </a>
+          <Link className={styles.btnGhost} to="/about">
+            Learn about our mission &rarr;
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /* ── CTA Section ── */
 function CtaSection() {
   return (
@@ -295,6 +334,7 @@ export default function Home(): ReactNode {
       <HomepageHero />
       <FeaturesSection />
       <ShowcaseSection />
+      <DonateSection />
       <CtaSection />
     </Layout>
   );

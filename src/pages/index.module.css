@@ -705,6 +705,94 @@
 
 
 /* ═══════════════════════════════════════════
+   DONATE SECTION
+   ═══════════════════════════════════════════ */
+
+.donate {
+  background: #000000;
+  padding: 120px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.donate::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 600px;
+  background: radial-gradient(ellipse, rgba(16, 185, 129, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.donateInner {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.donateTitle {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 900;
+  color: #f1f5f9;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  margin-bottom: 1.25rem;
+}
+
+.donateDesc {
+  font-size: 1.125rem;
+  color: rgba(148, 163, 184, 0.7);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.donateThermometer {
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.donateButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btnDonate {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #06b6d4, #10b981);
+  color: #ffffff;
+  border-radius: 980px;
+  padding: 14px 36px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btnDonate:hover {
+  opacity: 0.9;
+  color: #ffffff;
+  text-decoration: none;
+  transform: scale(1.02);
+}
+
+/* ═══════════════════════════════════════════
    CTA SECTION
    ═══════════════════════════════════════════ */
 

@@ -228,6 +228,43 @@
   color: #22d3ee;
 }
 
+/* Donate Card */
+.donateCard {
+  background: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  padding: 48px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.donateCta {
+  margin-top: 2rem;
+}
+
+.donateBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #06b6d4, #10b981);
+  color: #ffffff;
+  border-radius: 980px;
+  padding: 14px 36px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.donateBtn:hover {
+  opacity: 0.9;
+  color: #ffffff;
+  text-decoration: none;
+  transform: scale(1.02);
+}
+
 /* Responsive */
 @media screen and (max-width: 768px) {
   .heroCard {

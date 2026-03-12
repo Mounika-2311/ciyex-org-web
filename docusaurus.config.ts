@@ -78,6 +78,17 @@ const config: Config = {
     ],
   ],
 
+  clientModules: [
+    './src/clientModules/donateButton.ts',
+  ],
+
+  scripts: [
+    {
+      src: 'https://zeffy-scripts.s3.ca-central-1.amazonaws.com/embed-form-script.min.js',
+      async: true,
+    },
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: 'img/ciyex-social-card.jpg',
@@ -143,6 +154,13 @@ const config: Config = {
           ],
         },
         {
+          href: '#',
+          label: 'Donate',
+          position: 'right',
+          className: 'navbar-donate-btn',
+          'aria-label': 'Donate to Ciyex',
+        },
+        {
           to: '/signup',
           label: "Sign up, it's Free",
           position: 'right',
@@ -176,6 +194,7 @@ const config: Config = {
             { label: 'About Us', to: '/about' },
             { label: 'Blog', to: '/blog' },
             { label: 'GitHub', href: 'https://github.com/ciyex-org/ciyex' },
+            { label: 'Donate', href: 'https://www.zeffy.com/embed/donation-form/ciyex-ehr?modal=true' },
             { label: 'Release Notes', to: '/docs/releases' },
           ],
         },
