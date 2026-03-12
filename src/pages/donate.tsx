@@ -13,7 +13,7 @@ function DonateForm() {
       try {
         const data = typeof e.data === 'string' ? JSON.parse(e.data) : e.data;
         if (data.type === 'zeffy-embed:step-changed') {
-          setHeight(1400);
+          setHeight(1600);
         }
       } catch {
         // not JSON
