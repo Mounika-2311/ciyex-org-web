@@ -126,16 +126,16 @@ function HomepageHero() {
           Open Source &middot; 501(c)(3) Nonprofit
         </div>
         <Heading as="h1" className={styles.heroTitle}>
-          The future of<br />
-          <span className={styles.heroGradient}>healthcare technology.</span>
+          Healthcare access<br />
+          <span className={styles.heroGradient}>for every community.</span>
         </Heading>
         <p className={styles.heroSubtitle}>
-          A complete, modern Electronic Health Records platform.
-          HIPAA-compliant. FHIR R4 native. Free and open source.
+          30 million Americans lack access to basic health records technology.
+          We're building the open source EHR to change that &mdash; free forever.
         </p>
         <div className={styles.heroCta}>
-          <Link className={styles.btnPrimary} to="/docs/intro">
-            Get Started
+          <Link className={styles.btnPrimary} to="/about">
+            Our Mission
           </Link>
           <Link className={styles.btnSecondary} to="https://github.com/ciyex-org/ciyex">
             View on GitHub &rarr;
@@ -149,24 +149,24 @@ function HomepageHero() {
 
 /* ── Features ── */
 const features = [
-  { icon: <IconShield />, title: 'HIPAA Secure', desc: 'Enterprise-grade encryption, audit logging, and role-based access control. Built for compliance from day one.' },
-  { icon: <IconHeart />, title: 'FHIR R4 Native', desc: 'Built on HL7 FHIR R4 for seamless data exchange with any compliant system, EHR, or health information exchange.' },
-  { icon: <IconZap />, title: 'Cloud Native', desc: 'Microservices on Kubernetes with auto-scaling and high availability for mission-critical healthcare operations.' },
-  { icon: <IconUsers />, title: 'Patient Portal', desc: 'Empower patients with secure access to health records, scheduling, messaging, and prescription management.' },
-  { icon: <IconCode />, title: 'Open Source', desc: 'AGPL-3.0 licensed. Full source access. Self-host or use our managed cloud. No vendor lock-in, ever.' },
-  { icon: <IconGlobe />, title: 'Global Ready', desc: 'Multi-tenant, multi-language, and designed to serve clinics and hospitals of any size, anywhere in the world.' },
+  { icon: <IconHeart />, title: 'Patient-First Design', desc: 'Patients own their health data. Secure portal access to records, appointments, messaging, and prescriptions — putting people in control of their care.' },
+  { icon: <IconUsers />, title: 'Community Health', desc: 'Purpose-built for community health centers, free clinics, and rural providers who serve the most underserved populations.' },
+  { icon: <IconGlobe />, title: 'Health Equity', desc: 'Multi-language, culturally responsive, and designed to remove barriers to care for immigrant, uninsured, and underserved communities.' },
+  { icon: <IconShield />, title: 'Privacy &amp; Trust', desc: 'HIPAA-compliant with enterprise-grade encryption. Every patient deserves the same level of data protection, regardless of where they receive care.' },
+  { icon: <IconCode />, title: 'Open Source', desc: 'AGPL-3.0 licensed. No vendor lock-in, no per-patient fees. Communities can self-host and own their healthcare infrastructure.' },
+  { icon: <IconZap />, title: 'Interoperable', desc: 'FHIR R4 native — connects with labs, pharmacies, and other systems so patients never have to repeat their story at every visit.' },
 ];
 
 function FeaturesSection() {
   return (
     <section className={styles.features}>
       <div className={styles.featuresInner}>
-        <div className={styles.sectionLabel}>Built for healthcare</div>
+        <div className={styles.sectionLabel}>Why Ciyex</div>
         <Heading as="h2" className={styles.sectionTitle}>
-          Everything your practice needs.
+          Technology that serves patients, not profits.
         </Heading>
         <p className={styles.sectionSubtitle}>
-          From patient intake to billing, Ciyex EHR covers the full clinical workflow with modern tools built on open standards.
+          Every feature is designed with one question: does this improve health outcomes for the communities who need it most?
         </p>
         <div className={styles.featureGrid}>
           {features.map((f, i) => (
@@ -186,18 +186,18 @@ function FeaturesSection() {
 function ShowcaseSection() {
   return (
     <>
-      {/* Section 1: Clinical Workflows */}
+      {/* Section 1: Patient Care */}
       <section className={styles.showcase}>
         <div className={styles.showcaseInner}>
           <div className={styles.showcaseText}>
-            <div className={styles.sectionLabel}>Clinical Workflows</div>
+            <div className={styles.sectionLabel}>Better Care</div>
             <Heading as="h2" className={styles.showcaseTitle}>
-              Charting that<br />flows naturally.
+              Every patient<br />deserves this.
             </Heading>
             <p className={styles.showcaseDesc}>
-              Streamlined clinical documentation with smart templates,
-              e-prescribing, lab orders, and voice-to-text. Designed by
-              clinicians, for clinicians.
+              Complete health records, smart clinical tools, and coordinated care
+              &mdash; the same quality of technology whether you're at a rural clinic
+              or a major hospital.
             </p>
             <Link className={styles.showcaseLink} to="/docs/features/clinical-docs">
               Learn more &rarr;
@@ -228,14 +228,14 @@ function ShowcaseSection() {
       <section className={clsx(styles.showcase, styles.showcaseReverse, styles.showcaseDark)}>
         <div className={styles.showcaseInner}>
           <div className={styles.showcaseText}>
-            <div className={styles.sectionLabel}>Interoperability</div>
+            <div className={styles.sectionLabel}>Connected Care</div>
             <Heading as="h2" className={styles.showcaseTitle}>
-              Connect with<br />everything.
+              Your health data<br />should follow you.
             </Heading>
             <p className={styles.showcaseDesc}>
-              FHIR R4 and HL7 v2 native. Exchange data seamlessly with labs,
-              pharmacies, insurance payers, and other EHR systems. True
-              interoperability, not just a checkbox.
+              Built on FHIR R4 open standards so patient records move seamlessly
+              between providers, labs, pharmacies, and specialists &mdash; no more
+              lost records or repeated tests.
             </p>
             <Link className={styles.showcaseLink} to="/docs/architecture/fhir-integration">
               Explore FHIR integration &rarr;
@@ -295,17 +295,17 @@ function CtaSection() {
     <section className={styles.cta}>
       <div className={styles.ctaInner}>
         <Heading as="h2" className={styles.ctaTitle}>
-          Ready to modernize<br />your practice?
+          Join the movement for<br />open healthcare.
         </Heading>
         <p className={styles.ctaDesc}>
-          Join the open source healthcare revolution. Free forever for nonprofits and community health centers.
+          Whether you run a community health center, volunteer at a free clinic, or believe healthcare is a right &mdash; there's a place for you.
         </p>
         <div className={styles.ctaButtons}>
-          <Link className={styles.btnPrimary} to="/signup">
-            Schedule a Demo
+          <Link className={styles.btnPrimary} to="/donate">
+            Support Our Mission
           </Link>
           <Link className={styles.btnGhost} to="/docs/installation/docker-setup">
-            Self-Host Guide &rarr;
+            Deploy for Your Community &rarr;
           </Link>
         </div>
       </div>
@@ -317,8 +317,8 @@ function CtaSection() {
 export default function Home(): ReactNode {
   return (
     <Layout
-      title="Open Source EHR"
-      description="Ciyex EHR - A 501(c)(3) nonprofit building open source Electronic Health Records. Modern, secure, FHIR-compliant, and built for healthcare interoperability.">
+      title="Open Source EHR for Every Community"
+      description="Ciyex is a 501(c)(3) nonprofit building free, open source health records technology so every community — no matter how underserved — has access to modern healthcare tools.">
       <HomepageHero />
       <FeaturesSection />
       <ShowcaseSection />
