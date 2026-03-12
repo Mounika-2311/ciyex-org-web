@@ -79,13 +79,13 @@
   overflow: hidden;
   margin: 0 auto;
   max-width: 900px;
+  transition: height 0.3s ease;
   box-shadow: 0 0 60px rgba(6, 182, 212, 0.08), 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
 .calendlyEmbed {
   display: block;
   border: none;
-  min-height: 700px;
 }
 
 .trustSection {
@@ -116,9 +116,6 @@
     padding: 80px 20px 40px;
   }
 
-  .calendlyEmbed {
-    min-height: 600px;
-  }
 
   .trustSection {
     gap: 1.5rem;
