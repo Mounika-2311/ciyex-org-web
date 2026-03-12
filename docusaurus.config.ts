@@ -249,7 +249,6 @@ const config: Config = {
           items: [
             { label: 'GitHub Discussions', href: 'https://github.com/ciyex-org/ciyex/discussions' },
             { label: 'Forum', href: 'https://forum.ciyex.org' },
-            { label: 'Twitter', href: 'https://twitter.com/ciyexehr' },
           ],
         },
         {
