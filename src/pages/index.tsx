@@ -276,16 +276,6 @@ function DonateSection() {
           Ciyex is a nonprofit. Every dollar goes directly to building open source
           healthcare technology. Your donation is tax-deductible.
         </p>
-        <div className={styles.donateThermometer}>
-          <div style={{ position: 'relative', overflow: 'hidden', width: '100%', paddingTop: '120px' }}>
-            <iframe
-              title="Donation thermometer powered by Zeffy"
-              src="https://www.zeffy.com/embed/thermometer/ciyex-ehr"
-              allowTransparency={true}
-              style={{ position: 'absolute', border: 0, top: 0, left: 0, bottom: 0, right: 0, width: '100%', height: '120px' }}
-            />
-          </div>
-        </div>
         <div className={styles.donateButtons}>
           <Link className={styles.btnDonate} to="/donate">
             Donate Now
