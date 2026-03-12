@@ -122,6 +122,7 @@ export default function About(): ReactNode {
                   <h3 className={styles.infoLabel}>Organization Type</h3>
                   <p className={styles.infoValue}>
                     501(c)(3) Nonprofit Corporation<br />
+                    EIN: 41-3609665<br />
                     Licensed under AGPL-3.0
                   </p>
                 </div>
