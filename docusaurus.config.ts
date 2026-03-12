@@ -27,6 +27,75 @@ const config: Config = {
 
   onBrokenLinks: 'warn',
 
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: { type: 'application/ld+json' },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'NonprofitOrganization',
+        name: 'Ciyex Inc.',
+        alternateName: 'Ciyex EHR',
+        url: 'https://ciyex.org',
+        logo: 'https://ciyex.org/img/Ciyex-logo-no-text.png',
+        description: 'A 501(c)(3) nonprofit building open source Electronic Health Records. Modern, secure, FHIR-compliant, and built for healthcare interoperability.',
+        foundingDate: '2025',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '30 N Gould St, Ste N',
+          addressLocality: 'Sheridan',
+          addressRegion: 'WY',
+          postalCode: '82801',
+          addressCountry: 'US',
+        },
+        contactPoint: {
+          '@type': 'ContactPoint',
+          email: 'help@ciyex.org',
+          contactType: 'customer support',
+        },
+        sameAs: [
+          'https://github.com/ciyex-org/ciyex',
+          'https://twitter.com/ciyexehr',
+          'https://forum.ciyex.org',
+        ],
+        nonprofitStatus: 'https://schema.org/Nonprofit501c3',
+        taxID: '41-3609665',
+      }),
+    },
+    {
+      tagName: 'script',
+      attributes: { type: 'application/ld+json' },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'Ciyex EHR',
+        url: 'https://ciyex.org',
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: 'https://ciyex.org/search?q={search_term_string}',
+          'query-input': 'required name=search_term_string',
+        },
+      }),
+    },
+    {
+      tagName: 'script',
+      attributes: { type: 'application/ld+json' },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'SoftwareApplication',
+        name: 'Ciyex EHR',
+        applicationCategory: 'HealthApplication',
+        operatingSystem: 'Web, Docker, Kubernetes',
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'USD',
+        },
+        license: 'https://www.gnu.org/licenses/agpl-3.0.html',
+      }),
+    },
+  ],
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -49,6 +118,7 @@ const config: Config = {
             current: {
               label: 'v1.0.0 (Unreleased)',
               banner: 'unreleased',
+              noIndex: true,
             },
             '0.1.0': {
               label: 'v0.1.0',
@@ -73,6 +143,10 @@ const config: Config = {
         },
         theme: {
           customCss: './src/css/custom.css',
+        },
+        gtag: {
+          trackingID: 'G-XXXXXXXXXX',
+          anonymizeIP: true,
         },
       } satisfies Preset.Options,
     ],
@@ -191,8 +265,8 @@ const config: Config = {
         {
           title: 'Legal',
           items: [
-            { label: 'Privacy Policy', href: 'https://github.com/ciyex-org/ciyex/blob/main/PRIVACY.md' },
-            { label: 'Terms of Service', href: 'https://github.com/ciyex-org/ciyex/blob/main/TERMS.md' },
+            { label: 'Privacy Policy', to: '/privacy' },
+            { label: 'Terms of Service', to: '/terms' },
             { label: 'License (AGPL-3.0)', href: 'https://github.com/ciyex-org/ciyex/blob/main/LICENSE' },
           ],
         },
