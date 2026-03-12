@@ -105,8 +105,7 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        { to: '/docs/api', label: 'API', position: 'left' },
-        { to: '/blog', label: 'Blog', position: 'left' },
+{ to: '/blog', label: 'Blog', position: 'left' },
         { to: '/about', label: 'About', position: 'left' },
         {
           type: 'dropdown',
