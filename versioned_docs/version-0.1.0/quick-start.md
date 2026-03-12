@@ -277,7 +277,7 @@ If you encounter issues:
 
 1. Check the [Troubleshooting Guide](operations/troubleshooting.md)
 2. Search [GitHub Discussions](https://github.com/ciyex-org/ciyex/discussions)
-3. Join our [Discord](https://discord.gg/ciyex)
+3. Join our [Community Forum](https://forum.ciyex.org)
 4. Open an issue on [GitHub](https://github.com/ciyex-org/ciyex/issues)
 
 ---

@@ -611,7 +611,7 @@ tar -czf diagnostics-$(date +%Y%m%d-%H%M%S).tar.gz diagnostics/
 ### Support Channels
 
 - **GitHub Issues**: https://github.com/ciyex-org/ciyex/issues
-- **Discord**: https://discord.gg/ciyex
+- **Community Forum**: https://forum.ciyex.org
 - **Email**: support@ciyex.org
 - **Documentation**: https://ciyex.org/docs
 

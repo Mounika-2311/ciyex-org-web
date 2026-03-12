@@ -497,4 +497,4 @@ pnpm run dev
 
 - [Troubleshooting Guide](../operations/troubleshooting.md)
 - [GitHub Discussions](https://github.com/ciyex-org/ciyex/discussions)
-- [Discord Community](https://discord.gg/ciyex)
+- [Community Forum](https://forum.ciyex.org)

@@ -113,6 +113,7 @@ const config: Config = {
           label: 'Community',
           position: 'left',
           items: [
+            { label: 'Forum', href: 'https://forum.ciyex.org' },
             { label: 'Contributing', to: '/docs/contributing' },
             { label: 'Code of Conduct', to: '/docs/code-of-conduct' },
             { label: 'Discussions', href: 'https://github.com/ciyex-org/ciyex/discussions' },
@@ -166,7 +167,7 @@ const config: Config = {
           title: 'Community',
           items: [
             { label: 'GitHub Discussions', href: 'https://github.com/ciyex-org/ciyex/discussions' },
-            { label: 'Discord', href: 'https://discord.gg/ciyex' },
+            { label: 'Forum', href: 'https://forum.ciyex.org' },
             { label: 'Twitter', href: 'https://twitter.com/ciyexehr' },
           ],
         },
