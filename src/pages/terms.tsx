@@ -6,7 +6,7 @@ export default function Terms(): ReactNode {
   return (
     <Layout
       title="Terms of Service"
-      description="Ciyex Inc. Terms of Service - Terms governing use of Ciyex EHR and related services.">
+      description="Ciyex Terms of Service - Terms governing use of our open source EHR platform built for community health.">
       <main style={{ padding: '60px 0', minHeight: '80vh' }}>
         <div className="container" style={{ maxWidth: 800 }}>
           <Heading as="h1">Terms of Service</Heading>
@@ -17,8 +17,9 @@ export default function Terms(): ReactNode {
           <p>
             These Terms of Service ("Terms") govern your use of the Ciyex EHR platform, website
             (<a href="https://ciyex.org">ciyex.org</a>), and related services (collectively, the "Services")
-            provided by Ciyex Inc. ("Ciyex," "we," "us," or "our"), a 501(c)(3) nonprofit organization.
-            By accessing or using our Services, you agree to be bound by these Terms.
+            provided by Ciyex Inc. ("Ciyex," "we," "us," or "our"), a 501(c)(3) nonprofit organization
+            building open source healthcare technology for underserved communities. By accessing or using
+            our Services, you agree to be bound by these Terms.
           </p>
 
           <Heading as="h2">1. Acceptance of Terms</Heading>
@@ -29,16 +30,19 @@ export default function Terms(): ReactNode {
             organization to these Terms.
           </p>
 
-          <Heading as="h2">2. Description of Services</Heading>
+          <Heading as="h2">2. Our Mission and Services</Heading>
           <p>
-            Ciyex provides an open source Electronic Health Records (EHR) platform licensed under
-            AGPL-3.0. Our Services include:
+            Ciyex exists to ensure that every community, regardless of resources, has access to modern
+            health records technology. We provide a free, open source Electronic Health Records (EHR)
+            platform licensed under AGPL-3.0, purpose-built for community health centers, free clinics,
+            and rural providers. Our Services include:
           </p>
           <ul>
-            <li>The Ciyex EHR cloud-hosted platform</li>
-            <li>Self-hosted EHR software and documentation</li>
+            <li>The Ciyex EHR cloud-hosted platform (free for qualifying community health organizations)</li>
+            <li>Self-hosted EHR software and documentation for communities that want full control</li>
+            <li>A patient portal so individuals can access and manage their own health records</li>
             <li>The Ciyex website and community forum</li>
-            <li>Developer tools, APIs, and SDKs</li>
+            <li>Developer tools, APIs, and SDKs for interoperability</li>
           </ul>
 
           <Heading as="h2">3. User Accounts</Heading>
@@ -62,24 +66,31 @@ export default function Terms(): ReactNode {
 
           <Heading as="h2">5. Healthcare Disclaimer</Heading>
           <p>
-            Ciyex EHR is a software tool designed to assist healthcare providers. It is <strong>not</strong> a
-            substitute for professional medical judgment. Ciyex does not provide medical advice, diagnosis,
-            or treatment. Healthcare providers using Ciyex EHR are solely responsible for clinical decisions
-            and compliance with applicable healthcare regulations.
+            Ciyex EHR is a software tool designed to support healthcare providers in delivering better
+            care to their communities. It is <strong>not</strong> a substitute for professional medical
+            judgment. Ciyex does not provide medical advice, diagnosis, or treatment. Healthcare providers
+            using Ciyex EHR are solely responsible for clinical decisions and compliance with applicable
+            healthcare regulations. Patients should always consult their healthcare provider for medical concerns.
           </p>
 
-          <Heading as="h2">6. HIPAA and Compliance</Heading>
+          <Heading as="h2">6. Patient Data Protection and HIPAA</Heading>
           <p>
+            Every patient deserves the same level of data protection, regardless of where they receive care.
             Healthcare organizations that process Protected Health Information (PHI) through Ciyex EHR must
-            enter into a Business Associate Agreement (BAA) with Ciyex. The platform is designed to support
-            HIPAA compliance, but covered entities remain responsible for their own compliance obligations.
+            enter into a Business Associate Agreement (BAA) with Ciyex. The platform is designed with
+            enterprise-grade security and HIPAA compliance built in, so community health centers and rural
+            clinics get the same protections as large hospital systems. Covered entities remain responsible
+            for their own compliance obligations.
           </p>
 
-          <Heading as="h2">7. Open Source License</Heading>
+          <Heading as="h2">7. Open Source License and Transparency</Heading>
           <p>
             The Ciyex EHR software is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0).
-            Your use of the open source software is additionally governed by the terms of the AGPL-3.0 license,
-            available at <a href="https://github.com/ciyex-org/ciyex/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">github.com/ciyex-org/ciyex</a>.
+            We chose AGPL-3.0 because we believe healthcare technology should be transparent, auditable,
+            and free from vendor lock-in. Communities should never be held hostage by proprietary software
+            for something as critical as health records. Your use of the open source software is additionally
+            governed by the terms of the AGPL-3.0 license, available at{' '}
+            <a href="https://github.com/ciyex-org/ciyex/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">github.com/ciyex-org/ciyex</a>.
             In the event of a conflict between these Terms and the AGPL-3.0 license regarding the open source
             software, the AGPL-3.0 license shall prevail.
           </p>
@@ -93,9 +104,11 @@ export default function Terms(): ReactNode {
 
           <Heading as="h2">9. Donations</Heading>
           <p>
-            Donations to Ciyex Inc. are tax-deductible to the extent permitted by law. Donations are
-            processed by Zeffy, a third-party payment processor. Donation refunds are handled on a
-            case-by-case basis. Contact <a href="mailto:help@ciyex.org">help@ciyex.org</a> for refund requests.
+            Donations to Ciyex Inc. are tax-deductible to the extent permitted by law. Every dollar goes
+            directly to building and maintaining open source healthcare technology for communities that
+            need it most. Donations are processed by Zeffy, a third-party payment processor that charges
+            zero platform fees to nonprofits. Donation refunds are handled on a case-by-case basis.
+            Contact <a href="mailto:help@ciyex.org">help@ciyex.org</a> for refund requests.
           </p>
 
           <Heading as="h2">10. Disclaimer of Warranties</Heading>
