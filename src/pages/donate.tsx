@@ -23,14 +23,6 @@ export default function DonatePage() {
 
       <section className={styles.formSection}>
         <div className={styles.formContainer}>
-          <div className={styles.thermoWrap}>
-            <iframe
-              title="Donation thermometer powered by Zeffy"
-              src="https://www.zeffy.com/embed/thermometer/ciyex-ehr"
-              allowTransparency={true}
-              style={{ border: 0, width: '100%', height: '120px' }}
-            />
-          </div>
           <div className={styles.formEmbed}>
             <iframe
               title="Donate to Ciyex EHR"
