@@ -237,7 +237,7 @@ function ShowcaseSection() {
               pharmacies, insurance payers, and other EHR systems. True
               interoperability, not just a checkbox.
             </p>
-            <Link className={styles.showcaseLink} to="/docs/architecture/fhir">
+            <Link className={styles.showcaseLink} to="/docs/architecture/fhir-integration">
               Explore FHIR integration &rarr;
             </Link>
           </div>
@@ -277,12 +277,14 @@ function DonateSection() {
           healthcare technology. Your donation is tax-deductible.
         </p>
         <div className={styles.donateThermometer}>
-          <iframe
-            title="Donation thermometer powered by Zeffy"
-            src="https://www.zeffy.com/embed/thermometer/ciyex-ehr"
-            allowTransparency={true}
-            style={{ border: 0, width: '100%', height: '120px' }}
-          />
+          <div style={{ position: 'relative', overflow: 'hidden', width: '100%', paddingTop: '120px' }}>
+            <iframe
+              title="Donation thermometer powered by Zeffy"
+              src="https://www.zeffy.com/embed/thermometer/ciyex-ehr"
+              allowTransparency={true}
+              style={{ position: 'absolute', border: 0, top: 0, left: 0, bottom: 0, right: 0, width: '100%', height: '120px' }}
+            />
+          </div>
         </div>
         <div className={styles.donateButtons}>
           <a
@@ -316,7 +318,7 @@ function CtaSection() {
           <Link className={styles.btnPrimary} to="/signup">
             Schedule a Demo
           </Link>
-          <Link className={styles.btnGhost} to="/docs/installation">
+          <Link className={styles.btnGhost} to="/docs/installation/docker-setup">
             Self-Host Guide &rarr;
           </Link>
         </div>

@@ -118,17 +118,7 @@ const config: Config = {
         },
 { to: '/blog', label: 'Blog', position: 'left' },
         { to: '/about', label: 'About', position: 'left' },
-        {
-          type: 'dropdown',
-          label: 'Community',
-          position: 'left',
-          items: [
-            { label: 'Forum', href: 'https://forum.ciyex.org' },
-            { label: 'Contributing', to: '/docs/contributing' },
-            { label: 'Code of Conduct', to: '/docs/code-of-conduct' },
-            { label: 'Discussions', href: 'https://github.com/ciyex-org/ciyex/discussions' },
-          ],
-        },
+        { label: 'Forum', href: 'https://forum.ciyex.org', position: 'left' },
         {
           type: 'docsVersionDropdown',
           position: 'right',
@@ -145,11 +135,11 @@ const config: Config = {
           items: [
             {
               label: 'Provider',
-              to: '/signin/provider',
+              href: 'https://app-dev.ciyex.org',
             },
             {
               label: 'Patient',
-              to: '/signin/patient',
+              href: 'https://portal-dev.ciyex.org',
             },
           ],
         },
@@ -175,9 +165,9 @@ const config: Config = {
           title: 'Documentation',
           items: [
             { label: 'Getting Started', to: '/docs/intro' },
-            { label: 'Installation', to: '/docs/installation' },
-            { label: 'Configuration', to: '/docs/configuration' },
-            { label: 'API Reference', to: '/docs/api' },
+            { label: 'Installation', to: '/docs/installation/local-setup' },
+            { label: 'Configuration', to: '/docs/reference/configuration' },
+            { label: 'API Reference', to: '/docs/api/rest-api' },
           ],
         },
         {
@@ -195,14 +185,14 @@ const config: Config = {
             { label: 'Blog', to: '/blog' },
             { label: 'GitHub', href: 'https://github.com/ciyex-org/ciyex' },
             { label: 'Donate', href: 'https://www.zeffy.com/embed/donation-form/ciyex-ehr?modal=true' },
-            { label: 'Release Notes', to: '/docs/releases' },
+            { label: 'Contributing', to: '/docs/development/contributing' },
           ],
         },
         {
           title: 'Legal',
           items: [
-            { label: 'Privacy Policy', to: '/privacy' },
-            { label: 'Terms of Service', to: '/terms' },
+            { label: 'Privacy Policy', href: 'https://github.com/ciyex-org/ciyex/blob/main/PRIVACY.md' },
+            { label: 'Terms of Service', href: 'https://github.com/ciyex-org/ciyex/blob/main/TERMS.md' },
             { label: 'License (AGPL-3.0)', href: 'https://github.com/ciyex-org/ciyex/blob/main/LICENSE' },
           ],
         },

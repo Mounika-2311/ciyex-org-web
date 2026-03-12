@@ -724,7 +724,7 @@
   transform: translate(-50%, -50%);
   width: 800px;
   height: 600px;
-  background: radial-gradient(ellipse, rgba(16, 185, 129, 0.06) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(6, 182, 212, 0.12) 0%, rgba(16, 185, 129, 0.08) 40%, transparent 70%);
   pointer-events: none;
 }
 
