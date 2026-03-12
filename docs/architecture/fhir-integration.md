@@ -768,5 +768,4 @@ GET /fhir/$export-poll-status?_jobId=abc123
 
 - [Backend Architecture](backend-architecture.md) — Spring Boot patterns and package structure
 - [Frontend Architecture](frontend-architecture.md) — GenericFhirTab and DynamicFormRenderer
-- [REST API Reference](../api/rest-api.md) — Full endpoint listing
-- [System Architecture](../architecture.md) — Multi-service overview
+- [REST API Reference](/docs/api/rest-api) — Full endpoint listing
