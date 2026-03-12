@@ -6,39 +6,33 @@ import styles from './donate.module.css';
 function DonateForm() {
   const [height, setHeight] = useState(820);
   const iframeRef = useRef<HTMLIFrameElement>(null);
+  const userClicked = useRef(false);
+  const initialHeight = useRef<number | null>(null);
 
   useEffect(() => {
     const handleMessage = (e: MessageEvent) => {
-      // Zeffy sends postMessage with height info
-      if (e.origin?.includes('zeffy.com') && e.data) {
-        try {
-          const data = typeof e.data === 'string' ? JSON.parse(e.data) : e.data;
-          if (data.height && typeof data.height === 'number') {
-            setHeight(Math.max(820, data.height + 40));
+      if (!e.origin?.includes('zeffy.com') || !e.data) return;
+      try {
+        const data = typeof e.data === 'string' ? JSON.parse(e.data) : e.data;
+        if (data.height && typeof data.height === 'number') {
+          // Store the first height Zeffy sends (initial form load)
+          if (initialHeight.current === null) {
+            initialHeight.current = data.height;
+            return; // Don't resize on initial load
           }
-        } catch {
-          // not JSON, ignore
+          // Only resize if height changed from initial (means step changed)
+          if (Math.abs(data.height - initialHeight.current) > 50) {
+            setHeight(data.height + 40);
+          }
         }
-      }
-    };
-
-    // Also poll iframe navigation as fallback
-    let clicks = 0;
-    const handleClick = () => {
-      // After any click, wait a moment and bump height if still at initial
-      clicks++;
-      if (clicks >= 1 && height <= 820) {
-        setTimeout(() => setHeight(1400), 500);
+      } catch {
+        // not JSON
       }
     };
 
     window.addEventListener('message', handleMessage);
-    window.addEventListener('click', handleClick);
-    return () => {
-      window.removeEventListener('message', handleMessage);
-      window.removeEventListener('click', handleClick);
-    };
-  }, [height]);
+    return () => window.removeEventListener('message', handleMessage);
+  }, []);
 
   return (
     <div className={styles.formEmbed} style={{ height }}>
