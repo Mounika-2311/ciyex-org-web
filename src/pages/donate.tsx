@@ -6,24 +6,14 @@ import styles from './donate.module.css';
 function DonateForm() {
   const [height, setHeight] = useState(820);
   const iframeRef = useRef<HTMLIFrameElement>(null);
-  const userClicked = useRef(false);
-  const initialHeight = useRef<number | null>(null);
 
   useEffect(() => {
     const handleMessage = (e: MessageEvent) => {
       if (!e.origin?.includes('zeffy.com') || !e.data) return;
       try {
         const data = typeof e.data === 'string' ? JSON.parse(e.data) : e.data;
-        if (data.height && typeof data.height === 'number') {
-          // Store the first height Zeffy sends (initial form load)
-          if (initialHeight.current === null) {
-            initialHeight.current = data.height;
-            return; // Don't resize on initial load
-          }
-          // Only resize if height changed from initial (means step changed)
-          if (Math.abs(data.height - initialHeight.current) > 50) {
-            setHeight(data.height + 40);
-          }
+        if (data.type === 'zeffy-embed:step-changed') {
+          setHeight(1400);
         }
       } catch {
         // not JSON
