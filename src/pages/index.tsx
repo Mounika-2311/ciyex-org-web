@@ -126,12 +126,12 @@ function HomepageHero() {
           Open Source &middot; 501(c)(3) Nonprofit
         </div>
         <Heading as="h1" className={styles.heroTitle}>
-          Healthcare access<br />
+          Open source EHR<br />
           <span className={styles.heroGradient}>for every community.</span>
         </Heading>
         <p className={styles.heroSubtitle}>
-          30 million Americans lack access to basic health records technology.
-          We're building the open source EHR to change that. Free forever.
+          30 million Americans lack access to modern health records software.
+          We build the open source EHR so clinics and communities don't have to choose between paper charts and software they can't afford.
         </p>
         <div className={styles.heroCta}>
           <Link className={styles.btnPrimary} to="/about">
@@ -149,10 +149,10 @@ function HomepageHero() {
 
 /* ── Features ── */
 const features = [
-  { icon: <IconHeart />, title: 'Patient-First Design', desc: 'Patients own their health data. Secure portal access to records, appointments, messaging, and prescriptions. People in control of their care.' },
-  { icon: <IconUsers />, title: 'Community Health', desc: 'Purpose-built for community health centers, free clinics, and rural providers who serve the most underserved populations.' },
-  { icon: <IconGlobe />, title: 'Health Equity', desc: 'Multi-language, culturally responsive, and designed to remove barriers to care for immigrant, uninsured, and underserved communities.' },
-  { icon: <IconShield />, title: 'Privacy & Trust', desc: 'HIPAA-compliant with enterprise-grade encryption. Every patient deserves the same level of data protection, regardless of where they receive care.' },
+  { icon: <IconHeart />, title: 'Patient-First Design', desc: 'Patients own their health data. Secure portal access to records, appointments, messaging, and prescriptions. Software that puts people in control.' },
+  { icon: <IconUsers />, title: 'Community Health Centers', desc: 'Purpose-built EHR software for community health centers, free clinics, and rural providers who serve the most underserved populations.' },
+  { icon: <IconGlobe />, title: 'Health Equity', desc: 'Multi-language, culturally responsive, and designed to remove technology barriers for immigrant, uninsured, and underserved communities.' },
+  { icon: <IconShield />, title: 'Privacy & Trust', desc: 'HIPAA-compliant with enterprise-grade encryption. Every patient deserves the same level of data protection, regardless of which software their clinic uses.' },
   { icon: <IconCode />, title: 'Open Source', desc: 'AGPL-3.0 licensed. No vendor lock-in, no per-patient fees. Communities can self-host and own their healthcare infrastructure.' },
   { icon: <IconZap />, title: 'Interoperable', desc: 'FHIR R4 native. Connects with labs, pharmacies, and other systems so patients never have to repeat their story at every visit.' },
 ];
@@ -166,7 +166,7 @@ function FeaturesSection() {
           Technology that serves patients, not profits.
         </Heading>
         <p className={styles.sectionSubtitle}>
-          Every feature is designed with one question: does this improve health outcomes for the communities who need it most?
+          Every feature is designed with one question: does this give clinics and patients better tools than what they have today?
         </p>
         <div className={styles.featureGrid}>
           {features.map((f, i) => (
@@ -190,14 +190,14 @@ function ShowcaseSection() {
       <section className={styles.showcase}>
         <div className={styles.showcaseInner}>
           <div className={styles.showcaseText}>
-            <div className={styles.sectionLabel}>Better Care</div>
+            <div className={styles.sectionLabel}>Better Tools</div>
             <Heading as="h2" className={styles.showcaseTitle}>
-              Every patient<br />deserves this.
+              Every clinic<br />deserves this.
             </Heading>
             <p className={styles.showcaseDesc}>
-              Complete health records, smart clinical tools, and coordinated care
-              . The same quality of technology whether you're at a rural clinic
-              or a major hospital.
+              Complete health records software, smart clinical documentation tools,
+              and care coordination workflows. The same quality of technology
+              whether you run a rural clinic or a major hospital.
             </p>
             <Link className={styles.showcaseLink} to="/docs/features/clinical-docs">
               Learn more &rarr;
@@ -270,11 +270,11 @@ function DonateSection() {
         <div className={styles.sectionLabel}>501(c)(3) Nonprofit</div>
         <Heading as="h2" className={styles.donateTitle}>
           Help us build healthcare<br />
-          <span className={styles.heroGradient}>for everyone.</span>
+          <span className={styles.heroGradient}>technology for everyone.</span>
         </Heading>
         <p className={styles.donateDesc}>
           Ciyex is a nonprofit. Every dollar goes directly to building open source
-          healthcare technology. Your donation is tax-deductible.
+          EHR software for clinics that cannot afford it. Your donation is tax-deductible.
         </p>
         <div className={styles.donateButtons}>
           <Link className={styles.btnDonate} to="/donate">
@@ -295,10 +295,10 @@ function CtaSection() {
     <section className={styles.cta}>
       <div className={styles.ctaInner}>
         <Heading as="h2" className={styles.ctaTitle}>
-          Join the movement for<br />open healthcare.
+          Join the movement for<br />open source health records.
         </Heading>
         <p className={styles.ctaDesc}>
-          Whether you run a community health center, volunteer at a free clinic, or believe healthcare is a right, there's a place for you.
+          Whether you run a community health center, volunteer at a free clinic, or believe every clinic deserves modern software, there is a place for you.
         </p>
         <div className={styles.ctaButtons}>
           <Link className={styles.btnPrimary} to="/donate">
@@ -318,7 +318,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="Open Source EHR for Every Community"
-      description="Ciyex is a 501(c)(3) nonprofit building free, open source health records technology so every community, no matter how underserved, has access to modern healthcare tools.">
+      description="Ciyex is a 501(c)(3) nonprofit building free, open source EHR software so every clinic and community, no matter how underserved, has access to modern health records technology.">
       <HomepageHero />
       <FeaturesSection />
       <ShowcaseSection />
