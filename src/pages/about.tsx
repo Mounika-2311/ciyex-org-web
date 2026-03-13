@@ -97,8 +97,7 @@ export default function About(): ReactNode {
                 <div className={styles.donateCta}>
                   <a
                     className={styles.donateBtn}
-                    href="#"
-                    {...{'zeffy-form-link': 'https://www.zeffy.com/embed/donation-form/ciyex-ehr?modal=true'} as any}
+                    href="/donate"
                   >
                     Donate Now
                   </a>

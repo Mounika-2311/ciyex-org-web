@@ -154,6 +154,7 @@ const config: Config = {
 
   clientModules: [
     './src/clientModules/donateButton.ts',
+    './src/clientModules/ga4Events.ts',
   ],
 
   scripts: [
@@ -192,6 +193,7 @@ const config: Config = {
         },
 { to: '/blog', label: 'Blog', position: 'left' },
         { to: '/about', label: 'About', position: 'left' },
+        { to: '/impact', label: 'Impact', position: 'left' },
         { label: 'Forum', href: 'https://forum.ciyex.org', position: 'left' },
         {
           type: 'docsVersionDropdown',
@@ -255,6 +257,7 @@ const config: Config = {
           title: 'More',
           items: [
             { label: 'About Us', to: '/about' },
+            { label: 'Our Impact', to: '/impact' },
             { label: 'Blog', to: '/blog' },
             { label: 'GitHub', href: 'https://github.com/ciyex-org/ciyex' },
             { label: 'Donate', to: '/donate' },
@@ -270,7 +273,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Ciyex Inc., a 501(c)(3) nonprofit. Open Source EHR - Licensed under AGPL-3.0.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Ciyex Inc., a 501(c)(3) nonprofit (EIN: 41-3609665). Open Source EHR - Licensed under AGPL-3.0.`,
     },
     prism: {
       theme: prismThemes.github,
