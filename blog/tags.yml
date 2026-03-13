@@ -106,3 +106,11 @@ deployment:
   label: Deployment
   permalink: /blog/tags/deployment
   description: Deployment strategies.
+community-health:
+  label: Community Health
+  permalink: /blog/tags/community-health
+  description: Community health centers and safety-net providers.
+billing:
+  label: Billing
+  permalink: /blog/tags/billing
+  description: Medical billing and revenue cycle management.
