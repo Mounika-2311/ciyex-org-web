@@ -194,6 +194,7 @@ const config: Config = {
 { to: '/blog', label: 'Blog', position: 'left' },
         { to: '/about', label: 'About', position: 'left' },
         { to: '/impact', label: 'Impact', position: 'left' },
+        { to: '/professional-support', label: 'Professional Support', position: 'left' },
         { label: 'Forum', href: 'https://forum.ciyex.org', position: 'left' },
         {
           type: 'docsVersionDropdown',
@@ -251,6 +252,7 @@ const config: Config = {
           items: [
             { label: 'GitHub Discussions', href: 'https://github.com/ciyex-org/ciyex/discussions' },
             { label: 'Forum', href: 'https://forum.ciyex.org' },
+            { label: 'Professional Support', to: '/professional-support' },
           ],
         },
         {
