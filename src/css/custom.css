@@ -123,12 +123,12 @@
 
 /* ── Navbar Donate Button ── */
 .navbar-donate-btn {
-  background: linear-gradient(135deg, #06b6d4, #10b981) !important;
+  background: linear-gradient(135deg, #ef4444, #f97316) !important;
   color: #ffffff !important;
   border-radius: 980px;
-  padding: 6px 16px !important;
+  padding: 7px 20px !important;
   font-size: 0.8125rem !important;
-  font-weight: 600;
+  font-weight: 700;
   transition: all 0.2s ease;
   display: flex !important;
   align-items: center;
@@ -137,12 +137,16 @@
   line-height: 1.2;
   border: none;
   cursor: pointer;
+  box-shadow: 0 0 12px rgba(239, 68, 68, 0.4), 0 0 4px rgba(249, 115, 22, 0.3);
+  letter-spacing: 0.02em;
 }
 
 .navbar-donate-btn:hover {
-  opacity: 0.9;
+  opacity: 0.95;
   text-decoration: none !important;
   color: #ffffff !important;
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.5), 0 0 8px rgba(249, 115, 22, 0.4);
+  transform: scale(1.03);
 }
 
 /* ── Docusaurus global button overrides (docs pages etc) ── */

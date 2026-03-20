@@ -22,12 +22,12 @@ if (typeof window !== 'undefined') {
     const barOuter = document.createElement('div');
     barOuter.style.cssText = 'width:60px;height:6px;border-radius:3px;background:rgba(255,255,255,0.15);overflow:hidden;';
     const barInner = document.createElement('div');
-    barInner.style.cssText = 'width:1%;height:100%;border-radius:3px;background:linear-gradient(90deg,#06b6d4,#10b981);transition:width 0.5s;';
+    barInner.style.cssText = 'width:1%;height:100%;border-radius:3px;background:linear-gradient(90deg,#06b6d4,#10b981);transition:width 0.5s;min-width:2px;';
     barOuter.appendChild(barInner);
 
     const label = document.createElement('span');
     label.style.cssText = 'font-size:10px;font-weight:600;color:#2dd4bf;white-space:nowrap;';
-    label.textContent = '$0 / $200K';
+    label.textContent = '$1 / $200K';
 
     thermo.appendChild(barOuter);
     thermo.appendChild(label);
