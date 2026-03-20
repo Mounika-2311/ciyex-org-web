@@ -45,10 +45,10 @@
 .badge {
   font-size: 0.75rem;
   font-weight: 500;
-  color: rgba(148, 163, 184, 0.8);
+  color: #94a3b8;
   padding: 5px 14px;
   border-radius: 100px;
-  border: 1px solid rgba(148, 163, 184, 0.15);
+  border: 1px solid rgba(148, 163, 184, 0.25);
   letter-spacing: 0.04em;
 }
 
@@ -63,7 +63,7 @@
 
 .heroSubtitle {
   font-size: 1.25rem;
-  color: rgba(148, 163, 184, 0.7);
+  color: #cbd5e1;
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
@@ -135,7 +135,7 @@
 
 .stepText {
   font-size: 0.875rem;
-  color: rgba(148, 163, 184, 0.6);
+  color: #94a3b8;
   line-height: 1.6;
   margin: 0;
 }
@@ -149,7 +149,7 @@
 
 .vendorCard {
   background: #111827;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 48px;
 }
@@ -170,7 +170,7 @@
 
 .vendorCompany {
   font-size: 0.875rem;
-  color: rgba(148, 163, 184, 0.5);
+  color: #94a3b8;
   margin: 0;
 }
 
@@ -188,7 +188,7 @@
 .vendorDescription {
   font-size: 1.0625rem;
   line-height: 1.8;
-  color: rgba(148, 163, 184, 0.8);
+  color: #cbd5e1;
   margin-bottom: 2rem;
 }
 
@@ -210,7 +210,7 @@
 .detailTitle {
   font-size: 0.75rem;
   font-weight: 600;
-  color: rgba(148, 163, 184, 0.5);
+  color: #94a3b8;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 0.75rem;
@@ -227,7 +227,7 @@
 
 .serviceItem {
   font-size: 0.875rem;
-  color: rgba(148, 163, 184, 0.7);
+  color: #cbd5e1;
   padding-left: 1.25rem;
   position: relative;
 }
@@ -251,16 +251,16 @@
 
 .coverageTag {
   font-size: 0.8125rem;
-  color: rgba(148, 163, 184, 0.7);
+  color: #cbd5e1;
   padding: 4px 12px;
   border-radius: 100px;
-  border: 1px solid rgba(148, 163, 184, 0.12);
-  background: rgba(148, 163, 184, 0.04);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(148, 163, 184, 0.08);
 }
 
 .contactInfo {
   font-size: 0.875rem;
-  color: rgba(148, 163, 184, 0.7);
+  color: #cbd5e1;
   line-height: 1.7;
 }
 
@@ -313,8 +313,8 @@
   align-items: center;
   justify-content: center;
   background: transparent;
-  color: rgba(148, 163, 184, 0.8);
-  border: 1px solid rgba(148, 163, 184, 0.2);
+  color: #cbd5e1;
+  border: 1px solid rgba(148, 163, 184, 0.3);
   border-radius: 980px;
   padding: 12px 28px;
   font-size: 0.9375rem;
@@ -333,7 +333,7 @@
 /* CTA Card */
 .ctaCard {
   background: #111827;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 48px;
   text-align: center;
@@ -349,7 +349,7 @@
 .ctaText {
   font-size: 1.0625rem;
   line-height: 1.8;
-  color: rgba(148, 163, 184, 0.7);
+  color: #cbd5e1;
   max-width: 600px;
   margin: 0 auto 2rem;
 }
